@@ -6,8 +6,12 @@ int main() {
 	scanf("%d", &nb_user);
 	if (nb_user == nb_secret) {
 		printf("Succès");
-	} else {
-		printf("Echec");
+	} 
+	else if(nb_user < nb_secret) {
+		printf("Echec ! Le nombre secret est plus grand");
+	}
+	else {
+		printf("Echec ! Le nombre secret est plus petit");
 	}
 	return 0;
 }
